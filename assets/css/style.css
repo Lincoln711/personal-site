@@ -1,0 +1,18 @@
+body {
+    height: 2000px;
+    background-color: #151B54;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #15317E;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF0000;
+}   
