@@ -1,18 +1,202 @@
-body {
-    height: 2000px;
-    background-color: #151B54;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-.name {
-    font-weight: bold;
-    font-size: 20px;
-    color: #15317E;
+body {
+    font-family: "Inconsolata", monospace;
+    background-color: #2B3856;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
-a:hover {
-    color: #FF0000;
-}   
+header {
+   height: 100px;
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 25%);
+   background-color: #2B3856;
+}
+
+header .logo-navbar {
+    color: #57FEFF;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+header .items-navbar {
+    color: #fff;
+    gap: 50px;
+}
+
+
+header .item {
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 0.1s ease;
+}
+
+header .item-s {
+    padding: 15px 0;
+    transition: all 0.1s ease;
+}
+
+header .item:hover {
+    border-bottom: 2px solid #57FEFF;   
+    border-top: 2px solid #57FEFF;
+    color: #57FEFF;
+    transition: all 0.1s ease;
+}
+
+header .item-s:hover {
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+header .social-navbar {
+    color: #57FEFF;
+    gap: 40px
+}
+
+header .social-navbar .img-social i {
+    font-size: 30px;
+}
+
+.offcanvas-title {
+    font-size: 36px;
+    color: #57FEFF;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.offcanvas {
+    background-color: #1b2741;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #fff; 
+}
+
+.oc-item {
+    font-size: 30px;
+    transition: all .1s ease;    
+}
+
+.offcanvas-footer {
+    color: #57FEFF;
+    gap: 50px;
+    font-size: 35px;
+    border-top: 1px solid #fff;
+}
+
+.oc-item:hover {
+    color: #57FEFF;
+}
+
+.oc-social:hover {
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.name{
+    font-weight: 900;
+    color: #57FEFF;
+}
+
+.img-profile {
+    transition: all 0.6s ease;
+    box-shadow: 0 0 10px 5px #57FEFF;
+}
+
+.img-profile:hover {
+    box-shadow: 0 0 20px 10px #57FEFF;
+    transition: all 0.6s ease;
+}
+
+.btn-primary {
+    font-weight: 900;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #57FEFF;
+}
+
+.about h2 {
+    font-weight: 900;
+    margin-bottom: 50px
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.skill-item {
+    margin-bottom: 60px;
+}
+
+.about-text-color {
+    color: #173b8f;
+    font-weight: 900;
+}
+
+.about i {
+    font-size: 30px;
+    color: #57FEFF;
+}
+
+.skill-card {
+    background-color: #173b8f;
+    color: white; 
+    padding: 20px; 
+    border-radius: 20px; 
+    transition: transform 0.3s ease;
+    position: relative; 
+}
+
+.skill-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #57FEFF; 
+    color: #173b8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px; 
+    pointer-events: none;
+}
+
+.skill-card.intermediate::after {
+    content: "Intermediate";
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); 
+}
+
+.skill-card:hover::after {
+    opacity: 1;
+}
+
+::placeholder {
+    color: black !important;
+}
+
+.footer {
+    height: 100px;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 25%);
+    background-color: #2B3856;
+}
+
+.contact {
+    height: 750px;
+}
