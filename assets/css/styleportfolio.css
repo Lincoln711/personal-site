@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    font-family: "Inconsolata", monospace;
+    background-color: #2B3856;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+header {
+   height: 100px;
+   box-shadow: 0 3px 8px rgba(0, 0, 0, 25%);
+   background-color: #2B3856;
+}
+
+header .logo-navbar {
+    color: #57FEFF;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+
+header .items-navbar {
+    color: #fff;
+    gap: 50px;
+}
+
+
+header .item {
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 0.1s ease;
+}
+
+header .item-s {
+    padding: 15px 0;
+    transition: all 0.1s ease;
+}
+
+header .item:hover {
+    border-bottom: 2px solid #57FEFF;   
+    border-top: 2px solid #57FEFF;
+    color: #57FEFF;
+    transition: all 0.1s ease;
+}
+
+header .item-s:hover {
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+header .social-navbar {
+    color: #57FEFF;
+    gap: 40px
+}
+
+header .social-navbar .img-social i {
+    font-size: 30px;
+}
+
+.offcanvas-title {
+    font-size: 36px;
+    color: #57FEFF;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.offcanvas {
+    background-color: #1b2741;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #fff; 
+}
+
+.oc-item {
+    font-size: 30px;
+    transition: all .1s ease;    
+}
+
+.offcanvas-footer {
+    color: #57FEFF;
+    gap: 50px;
+    font-size: 35px;
+    border-top: 1px solid #fff;
+}
+
+.oc-item:hover {
+    color: #57FEFF;
+}
+
+.oc-social:hover {
+    color: #fff;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer {
+    height: 100px;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 25%);
+    background-color: #2B3856;
+}
+
+.card {
+    border: 1px solid #57FEFF;
+}
+
+.btn-primary {
+    font-weight: 900;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #57FEFF;
+}
