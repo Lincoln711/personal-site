@@ -130,7 +130,8 @@ header .social-navbar .img-social i {
 
 .about h2 {
     font-weight: 900;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    color: #173b8f;
 }
 
 .about-text p {
@@ -198,12 +199,21 @@ header .social-navbar .img-social i {
     color: black !important;
 }
 
+.contact {
+    height: 750px;
+}
+
+.contact h2 {
+    color: #57FEFF;
+}
+
+.contact .icon {
+    color: #57FEFF;
+}
+
 .footer {
     height: 100px;
     box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 25%);
     background-color: #2B3856;
 }
 
-.contact {
-    height: 750px;
-}
