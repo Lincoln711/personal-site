@@ -21,7 +21,6 @@ header .logo-navbar {
     font-size: 26px;
     font-weight: 900;
     letter-spacing: 2px;
-    pointer-events: none;
 }
 
 header .items-navbar {
@@ -99,6 +98,10 @@ header .social-navbar .img-social i {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.project-cards-section {
+    margin-top: 100px;
 }
 
 .footer {

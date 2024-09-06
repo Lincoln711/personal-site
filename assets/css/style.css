@@ -21,7 +21,6 @@ header .logo-navbar {
     font-size: 26px;
     font-weight: 900;
     letter-spacing: 2px;
-    pointer-events: none;
 }
 
 header .items-navbar {
@@ -125,6 +124,10 @@ header .social-navbar .img-social i {
     color: #57FEFF;
 }
 
+.sectionspacing {
+    padding-top: 60px;
+}
+
 .about h2 {
     font-weight: 900;
     margin-bottom: 50px
@@ -177,6 +180,10 @@ header .social-navbar .img-social i {
 
 .skill-card.intermediate::after {
     content: "Intermediate";
+}
+
+.skill-card.beginner::after {
+    content: "Beginner";
 }
 
 .skill-card:hover {

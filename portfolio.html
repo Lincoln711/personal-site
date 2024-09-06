@@ -4,12 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Simone Bruno</title>
+    <meta name="description"
+        content="I'm Simone Bruno, a passionate web developer from Italy. Explore my portfolio, skills, and get in touch! ">
+    <meta name="author" content="Simone Bruno">
+    <meta name="keywords"
+        content="Simone Bruno, web developer, italia, html developer, css developer, front-end developer, responsive web design, user-friendly website, portfolio, custom website design">
+
+    <meta property="og:title" content="Simone Bruno | Web Developer" />
+    <meta property="og:description"
+        content="I'm Simone Bruno, a passionate web developer from Italy. Explore my portfolio, skills, and get in touch!" />
+    <meta property="og:image" content="https://lincoln711.github.io/personal-site/assets/img/landingpage.jpg" />
+    <meta property="og:url" content="https://lincoln711.github.io/personal-site/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Simone Bruno's Portfolio" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simone Bruno | Web Developer">
+    <meta name="twitter:description"
+        content="I'm Simone Bruno, a passionate web developer from Italy. Explore my portfolio, skills, and get in touch!">
+    <meta name="twitter:image" content="https://lincoln711.github.io/personal-site/assets/img/landingpage.jpg">
+
+    <title>Simone Bruno | Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.jpg">
     <link rel="stylesheet" href="./assets/css/styleportfolio.css">
-    <link rel="stylesheet" href="./assets/fontawesome/fontawesome-free-6.5.2-web/css/all.css">
 </head>
 
 <body>
@@ -18,189 +38,195 @@
 
         <!-- NAVBAR -->
 
-        <div class="container-fluid d-flex justify-content-between align-items-center px-5">
+        <nav class="w-100">
+            <div class="container-fluid d-flex justify-content-between align-items-center px-5">
 
-            <div class="logo-navbar">
-                <a href="#">Simone();</a>
+                <div class="logo-navbar">
+                    <a href="./index.html" aria-label="Simone Bruno's home page">Simone();</a>
+                </div>
+
+                <!-- NAVBAR ITEM-->
+
+                <div class="items-navbar d-none d-lg-flex justify-content-center align-items-center">
+                    <div class="item py-3">
+                        <a href="index.html#home">Home</a>
+                    </div>
+                    <div class="item py-3">
+                        <a href="index.html#about">About</a>
+                    </div>
+                    <div class="item py-3">
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                    <div class="item py-3">
+                        <a href="portfolio.html" aria-current="page">Portfolio</a>
+                    </div>
+                </div>
+
+                <!-- NAVBAR SOCIAL-->
+
+                <div class="social-navbar d-none d-lg-flex">
+                    <div class="item-s">
+                        <a target="_blank" class="img-social" href="https://www.instagram.com/__simonebruno__/"
+                            aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="item-s">
+                        <a target="_blank" class="img-social" href="https://www.linkedin.com/in/simone-bruno-3bb121312/"
+                            aria-label="Linkedin Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="item-s">
+                        <a target="_blank" class="img-social" href="https://github.com/Lincoln711"
+                            aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- BUTTON OFFCANVAS -->
+
+                <div class="text-white fs-4 d-lg-none">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-label="Open Menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+
+                <!-- OFFCANVAS HEADER -->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+
+                    <div class="offcanvas-header d-flex justify-content-between">
+                        <a class="offcanvas-title" id="offcanvasExampleLabel">Simone Bruno</a>
+                        <i class="fa-solid fa-x text-white fs-3 cursor-pointer" data-bs-dismiss="offcanvas"
+                            aria-label="Close Menu"></i>
+                    </div>
+
+                    <!-- OFFCANVAS BODY -->
+
+                    <div class="offcanvas-body d-flex flex-column justify-content-around text-white">
+                        <div class="oc-item ms-3">
+                            <i class="fa-solid fa-house pe-3"></i><a href="index.html#home">Home</a>
+                        </div>
+                        <div class="oc-item ms-3">
+                            <i class="fa-solid fa-circle-info pe-3"></i><a href="index.html#about">About</a>
+                        </div>
+                        <div class="oc-item ms-3">
+                            <i class="fa-solid fa-envelope pe-3"></i><a href="index.html#contact">Contact</a>
+                        </div>
+                        <div class="oc-item ms-3">
+                            <i class="fa-solid fa-file pe-3"></i><a href="portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+
+                    <!-- OFFCANVAS FOOTER -->
+
+
+                    <div class="offcanvas-footer d-flex justify-content-center py-3">
+                        <div class="oc-social">
+                            <a target="_blank" href="https://www.instagram.com/__simonebruno__/"
+                                aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="oc-social">
+                            <a target="_blank" href="https://www.linkedin.com/in/simone-bruno-3bb121312/"
+                                aria-label="Linkedin Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="oc-social">
+                            <a target="_blank" href="https://github.com/Lincoln711" aria-label="GitHub Profile"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- NAVBAR ITEM-->
-
-            <div class="items-navbar d-none d-lg-flex justify-content-center align-items-center">
-                <div class="item py-3">
-                    <a href="index.html#home">Home</a>
-                </div>
-                <div class="item py-3">
-                    <a href="index.html#about">About</a>
-                </div>
-                <div class="item py-3">
-                    <a href="index.html#contact">Contact</a>
-                </div>
-                <div class="item py-3">
-                    <a href="portfolio.html" aria-current="page">Portfolio</a>
-                </div>
-            </div>
-
-            <!-- NAVBAR SOCIAL-->
-
-            <div class="social-navbar d-none d-lg-flex">
-                <div class="item-s">
-                    <a target="_blank" class="img-social" href="https://www.instagram.com/__simonebruno__/"><i
-                            class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="item-s">
-                    <a target="_blank" class="img-social" href="https://www.linkedin.com/in/simone-bruno-3bb121312/"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="item-s">
-                    <a target="_blank" class="img-social" href="https://github.com/Lincoln711"><i
-                            class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-            <!-- BUTTON OFFCANVAS -->
-
-            <div class="text-white fs-4 d-lg-none">
-                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-            </div>
-
-            <!-- OFFCANVAS HEADER -->
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-
-                <div class="offcanvas-header d-flex justify-content-between">
-                    <a class="offcanvas-title" id="offcanvasExampleLabel">Simone Bruno</a>
-                    <i class="fa-solid fa-x text-white fs-3 cursor-pointer" data-bs-dismiss="offcanvas"></i>
-                </div>
-
-                <!-- OFFCANVAS BODY -->
-
-                <div class="offcanvas-body d-flex flex-column justify-content-around text-white">
-                    <div class="oc-item ms-3">
-                        <i class="fa-solid fa-house pe-3"></i><a href="index.html#home">Home</a>
-                    </div>
-                    <div class="oc-item ms-3">
-                        <i class="fa-solid fa-circle-info pe-3"></i><a href="index.html#about">About</a>
-                    </div>
-                    <div class="oc-item ms-3">
-                        <i class="fa-solid fa-envelope pe-3"></i><a href="index.html#contact">Contact</a>
-                    </div>
-                    <div class="oc-item ms-3">
-                        <i class="fa-solid fa-file pe-3"></i><a href="portfolio.html">Portfolio</a>
-                    </div>
-                </div>
-
-                <!-- OFFCANVAS FOOTER -->
-
-
-                <div class="offcanvas-footer d-flex justify-content-center py-3">
-                    <div class="oc-social">
-                        <a target="_blank" href="https://www.instagram.com/__simonebruno__/"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="oc-social">
-                        <a target="_blank" href="https://www.linkedin.com/in/simone-bruno-3bb121312/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="oc-social">
-                        <a target="_blank" href="https://github.com/Lincoln711"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <!-- PROJECT CARDS -->
 
-    <section class="mt-5 d-flex align-items-center justify-content-center min-vh-100">
-        <div class="container">
-            <div class="row my-md-5">
-                <div class="col-md-4 mt-5 mt-md-0 pt-5 pt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
+    <main>
+        <section class="project-cards-section d-flex align-items-center justify-content-center min-vh-100">
+            <div class="container">
+                <div class="row my-md-5">
+                    <div class="col-md-4 mt-5 mt-md-0 pt-5 pt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5 mt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5 mt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5 mt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
+                <div class="row my-md-5">
+                    <div class="col-md-4 mt-5 mt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mt-5 mt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
+                    <div class="col-md-4 mt-5 mt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-5 mt-md-0">
+                        <div class="card">
+                            <img src="./assets/img/portfolioimg.jpg" class="card-img-top" alt="/" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">Project title</h5>
+                                <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                                    lobortis augue nulla, sed interdum tortor condimentum vel.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary">Live demo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row my-md-5">
-                <div class="col-md-4 mt-5 mt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5 mt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mt-5 mt-md-0">
-                    <div class="card">
-                        <img src="/" class="card-img-top" alt="/">
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">Project title</h5>
-                            <p class="card-text py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                                lobortis augue nulla, sed interdum tortor condimentum vel.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="#" class="btn btn-primary">Live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER START -->
 
@@ -221,6 +247,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7a960f4f37.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
