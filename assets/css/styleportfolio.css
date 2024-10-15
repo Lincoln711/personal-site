@@ -112,7 +112,8 @@ header .social-navbar .img-social i {
 
 .card {
     border: 1px solid #57FEFF;
-}
+    height: 100%;
+}   
 
 .btn-primary {
     font-weight: 900;
